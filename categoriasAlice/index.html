@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Categorias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+  </head>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      *{
+    list-style: none;
+    text-decoration: none;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 785px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #000000;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .col-md-6{font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;}
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  <style>body.shimeji-pinned iframe {
+      pointer-events: none;
+    }
+    body.shimeji-select-ie {
+      cursor: cell !important;
+    }
+    #shimeji-contextMenu::-webkit-scrollbar {
+      width: 6px;
+    }
+    #shimeji-contextMenu::-webkit-scrollbar-thumb {
+      background-color: rgba(30,30,30,0.6);
+      border-radius: 3px;
+    }
+    #shimeji-contextMenu::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    </style><meta name="shimejiBrowserExtensionId" content="gohjpllcolmccldfdggmamodembldgpc" data-version="2.0.1"><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css"></head>
+  <body>
+
+    <!-- inicio do cabeçalho -->
+    <header>
+      <nav class="navigation">
+          <a href="#" class="logo">TATU<span></span></a>
+          <ul class="nav-menu">
+              <li class="nav-item"><a href="#">Ajuda</a></li>
+              <li class="nav-item"><a href="#">Incio</a></li>
+              <li class="nav-item"><a href="#">Categorias</a></li>
+              <li class="nav-item"><a href="#">Tatuadores</a></li>
+              <a href="#" class="logo-btn">Login</a>
+              <i class='bx bx-search'></i>
+          </ul>
+          <div class="menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>
+
+      <style>
+        :root{
+    --primaria:#353434;
+    --branco:#fff;
+    --dark:#1e1c2a;
+    --secundaria: #414040;
+    --fundo: #5b5a5a;
+}
+
+/*HEADER*/
+
+body{
+    color: var(--dark);
+    background: var(--branco);
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--branco);
+    transition: all 0.5s;
+    position: fixed;
+}
+.navigation .logo{
+    color: var(--primaria);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--dark);
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.logo-btn{
+    padding: 15px 45px;
+    background: var(--primaria);
+    color: var(--branco);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.logo-btn:hover{
+    background: #252323;
+}
+.logo-img img{
+    width: 100%;
+}
+
+.navigation ul li a:hover{
+    color: var(--primaria);
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--primaria);
+}
+      </style>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estilo Aquarela</font></font></h1>
+          <p class="lead my-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nossos tatuadores estão completamente preparados para te oferecer o melhor serviço!!</font></font></p>
+        </div>
+      </div>
+    
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              
+              <strong class="d-inline-block mb-2 text-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rua Tabapuã 1443- Itaim Bibi - São Paulo- Sp</font></font></strong>
+              <h4 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MATHEUS SILVA RAMOS</font></font></h4><br>
+              <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atuando em: Classic Tattoo You</font></font></div><br>
+              <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram: @ClassicaTattoo_You</font></font></div><br>
+              <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Whatsapp: (11) 97402-5282</font></font></div><br>
+              <p class="card-text mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Matheus tem 27 anos, procurou se especializar em tatuagens aquarelas. Possui cinco certificados na área, além de ter seu própio estudio.</font></font></p>
+    
+            </div>
+            <div class="tatuador_aquarela">
+            </div> <img src="https://i.pinimg.com/564x/f8/b9/f7/f8b9f725d6bd8344beaa0756469e0f41.jpg" alt="aquarela">
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rua Carvalho 96 - Mocca - São Paulo- SP</font></font></strong>
+              <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MARTA PONTES COSTA</font></font></h3><br>
+              <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atuando em: New Tattoo Shop</font></font></div><br>
+              <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram: @New_Shop</font></font></div><br>
+              <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Whatsapp: (11) 98247-2304</font></font></div><br>
+              <p class="card-text mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Marta tem 28 anos, procurou se especializar em tatuagens aquarelas. Possui muitos trabalhos, além de fornecer curso dentro da sua categoria.</font></font></p>
+    
+            </div>
+            <div class="tatuador_aquarela">
+            </div> <img src="https://i.pinimg.com/564x/6b/9f/f2/6b9ff2a9dd105dd35428e2b0e0fe02f0.jpg" alt="aquarela">
+          </div>
+          </div>
+        </div>
+      </div>
+      </main>
+      </main>
+
+
+
+      <!-- iniício do footer -->
+      <footer>
+        <div id="footer_content">
+          <div id="footer_contacts">
+              <h1>Tatu</h1>
+              <p>Um ambiente para quem ama tatuagem.</p>
+    
+              <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+    
+                  <a href="#" class="footer-link" id="facebook">
+                      <i class="fa-brands fa-facebook"></i>
+                  </a>
+    
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+              </div>
+    
+              <div>
+                  <ul class="footer-list">
+                      <li>
+                          <h3>Blog</h3>
+                      </li>
+                      <li>
+                          <a href="#" class="footer-link">Destaques da semana</a>
+                      </li>
+                      <li>
+                          <a href="#" class="footer-link">Ideias de tatuagens</a>
+                      </li>
+                      <li>
+                          <a href="#" class="footer-link">Conheça as categorias</a>
+                      </li>
+                  </ul>
+    
+                  <ul class="footer-list">
+                      <li>
+                          <h3>Products</h3>
+                      </li>
+                      <li>
+                          <a href="#" class="footer-link">App</a>
+                      </li>
+                      <li>
+                          <a href="#" class="footer-link">Desktop</a>
+                      </li>
+                      <li>
+                          <a href="#" class="footer-link">Cloud</a>
+                      </li>
+                  </ul>
+    
+                  <div id="footer_subscribe">
+                      <h3>Se inscreva!</h3>
+                      <p>
+                          Coloque seu e-mail para receber novas informações sobre o mundo tatuação
+                      </p>
+    
+                      <div id="input_group">
+                          <input type="text" id="email">
+                          <button>
+                              <i class="fa-solid fa-envelope"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      <div id="footer_copyright">
+          &#169
+          2023 all rights reserver
+      </div>
+    
+      <style>
+        :root{
+        --primaria:#353434;
+        --branco:#fff;
+        --dark:#1e1c2a;
+        --secundaria: #414040;
+        --fundo: #5b5a5a;
+    }
+        footer{
+        width: 100%;
+        color: var(--dark);
+    }
+    
+    .footer-link {
+        text-decoration: none;
+    }
+    
+    #footer_content {
+        background-color: var(--fundo);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3rem 3.5rem;
+    }
+    
+    #footer_contacts h1 {
+        margin-bottom: 0.75rem;
+    }
+    
+    #footer_social_media {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    #footer_social_media .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: var(--primaria);
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+    
+    #footer_social_media .footer-link i {
+        font-size: 1.25rem;
+    }
+    
+    #footer_social_media .footer-link:hover {
+        opacity: 0.8;
+    }
+    
+    #instagram {
+        background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    }
+    
+    #facebook {
+        background-color: #4267b3;
+    }
+    
+    #whatsapp {
+        background-color: #25d366;
+    }
+    
+    #footer_subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        list-style: none;
+    }
+    
+    .footer-list .footer-link {
+        color: var(--dark);
+        transition: all 0.4s;
+    }
+    
+    .footer-list .footer-link:hover {
+        color: #fff;
+    }
+    
+    #footer_subscribe p {
+        color: var(--branco);
+    }
+    
+    #input_group {
+        display: flex;
+        align-items: center;
+        background-color: var(--secundaria);
+        border-radius: 4px;
+    }
+    
+    #input_group input {
+        all: unset;
+        padding: 0.75rem;
+        width: 100%;
+    }
+    
+    #input_group button {
+        background-color: var(--branco);
+        border: none;
+        color: var(--primaria);
+        padding: 0px 1.25rem;
+        font-size: 1.125rem;
+        height: 100%;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    
+    #input_group button:hover {
+        opacity: 0.8;
+    }
+    
+    #footer_copyrigth {
+        display: flex;
+        justify-content: center;
+        background-color: var(--branco);
+        font-size: 0.9rem;
+        padding: 1.5rem;
+        font-weight: 100;
+    }
+    
+    @media (max-width:785px) {
+        #footer_content {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3rem 2rem;
+      }
+      }
+      </style>
+      </footer>
+  </body>
+  
+</html>
