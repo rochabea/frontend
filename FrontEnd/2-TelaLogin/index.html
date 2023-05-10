@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">TATU<span></span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Ajuda</a></li>
+                <li class="nav-item"><a href="#">Incio</a></li>
+                <li class="nav-item"><a href="#">Categorias</a></li>
+                <li class="nav-item"><a href="#">Tatuadores</a></li>
+                <a href="#" class="logo-btn">Login</a>
+                <i class='bx bx-search'></i>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <br>
+        <Br>
+        <br>
+        <br>
+        <br>
+        <h1>Realizar Login</h1>
+        <div class="social-media">
+            <a href="#" id="google">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZ9JREFUSEvllo0tREEURs9WgArQARWgAx2gAnRABagAFdABOqADKqADcpL3krezd37e2ths3GSzm7fz7rl/881MWJJNlsRlJcE7XbVe56namIz3gSPgEFhPYO/AI3AD+LtqLWAzuwIEt9gdcA58lRbXwMcdNM2wFoDQ7RK8BBZ6WyNk/j8BzDxrObDlfQp6qaM3wIHqe2k17PtmR6lCXZcDPwN7QbiXwEUmDZ8bTDHT/t0IbPQPgfPdLtM5qz/9WgQ2YrfN0JzS64UQOycR2IlcG0DsaS8WC2OnYAflM/F+DzjhkX03RjIzGylYkXCaW8u8+mAzTbP4k1ILTofLvan8RRbp91ageDOi0rqdSsKRBuS2O00ebqS6HYGjAdNPi4BEUhtux7GSqSyafWS5k+wAUIKnrHRIuHgoJP2L9txP78yeWiW/U3vJneOlYzGn2Y2awUeneOGFoHYRMBOvNFHmpQDsq6XP3sdqYJ1bQg+O6JiM4O77s99efYaOzd7yDw/9/n8ztOdupYVd9nIl9UApXuhKvWgpdeswjVr3/8A/XkxPHxX+7OEAAAAASUVORK5CYII="/>
+            </a>
+            <a href="#" id="facebook" class="facebook">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAc1JREFUSEvFlu0xBUEQRe+LABEgAkSACBABGSgRIAIlAkSACBABGSADIqCO2t2aHT09PfPn9a/3Mbunb3/OQkuyxZK46gHvSVqRtD04/SbpS9JLi4goGMippENJqwUA8AdJ15JwxrUaGMiVpJPai7L/byWdDZEwH/XAqLyXtNEIHY9/SDoqqS+BgT45YY36Qvj3LbgFJryvQaWfQ14BjEbx7SbfUb6Th90Ck5/jgCSK6MLII7+dZ8/f5XWSgwkxamtG66DMMgvMuU1JqP+zHBxVS9HQOqnhyM+gzOqCmeocTK4YDjUjZ2mv4sRB5SHevWYpxmMqOWK5wyiNGBX+nIeaqUTfRqwXPKUofUGpKCxHesGXQyfMissDe1WcO+bl2wRTiTeFOLeAKbqtwnvMUHvF1QL2Cm3qhmg70fj0+GiELDXSNAL5bNl3Ovt7B0hPcbkDhBX4HuinHrA7MmFGplAruLokALMWqcx1R3kLmNXJ8klXZ/Gyx0FGW2luR8EUFN3y7w5Wu/oQdkt5BIxSxrB58Ytc9mijfPPUwI/DepyFN01dDTyepdrpTxQQfgtMWIkQ56aFX6qTKDh9nvzn4bN+c7uyBxxo8/qRpYF/ATESYx8MOAMfAAAAAElFTkSuQmCC"/>
+            </a>
+            <a href="#" id="linkedin">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARBJREFUSEvtl+0RwUAQhp90QAc6QAWoQAmoQAnoQAeohA7oAB3ogHlncmbnZmQS1iVm7J8kl7t7su9+zCWjJstq4tIocAvoOitxBS52z9jjDnB2hobt2sAtPMTgIbD/EngEHBoPngFbQCHQdfCBGqU9VkIIGGwKbFKAxbAJsQbmqcBKBkncA+SxSu1dKy31u4BX6yqBNdnGeALschU0HpSQGqd8ovJCYRlHX1AJbOt8CSyAFaB7mSBqCs/GYGAKk60CV3DgKPYxPK4Cd3DIdoH7pifHXdAdfDfy2jBo2L5zBSu5jnWAYzmTefwH/77Unv26UjklA9d22JOH6rtqDJ6mo23h8dYTVrhXo/4kknj9AOO5bx9DceH0AAAAAElFTkSuQmCC"/>
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>OU</span>
+        </div>
+
+        <form action="">
+            <label for="email">
+                <span>E-mail</span>
+                <input type="email" id="email" name="email">
+            </label>
+
+            <label for="password">
+                <span>Nome</span>
+                <input type="password" id="password" name="password">
+            </label>
+            <input type="submit" value="Efetuar Login">
+        </form>
+    </main>
+    
+    
+    <!-- rodapé -->
+    <footer>
+        <br>
+        <br>
+        <br>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Tatu</h1>
+                <p>Um ambiente para quem ama tatuagem.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Blog</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Destaques da semana</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Ideias de tatuagens</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Conheça as categorias</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Products</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">App</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Desktop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Cloud</a>
+                        </li>
+                    </ul>
+
+                    <div id="footer_subscribe">
+                        <h3>Se inscreva!</h3>
+                        <p>
+                            Coloque seu e-mail para receber novas informações sobre o mundo tatuação
+                        </p>
+
+                        <div id="input_group">
+                            <input type="text" id="email">
+                            <button>
+                                <i class="fa-solid fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserver
+        </div>
+    </footer>
+</body>
+</html>

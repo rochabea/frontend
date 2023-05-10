@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="boxicons" href="https://boxicons.com/">
+    <title>Tatu - Central de Ajuda</title>
+</head>
+<body>
+    <header>
+            <nav class="navigation">
+                <a href="#" class="logo">TATU<span></span></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#">Ajuda</a></li>
+                    <li class="nav-item"><a href="#">Incio</a></li>
+                    <li class="nav-item"><a href="#">Categorias</a></li>
+                    <li class="nav-item"><a href="#">Tatuadores</a></li>
+                    <a href="#" class="logo-btn">Login</a>
+                    <i class='bx bx-search'></i>
+                </ul>
+                <div class="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+    </header>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <h1>Central de ajuda</h1>
+            <form>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                </fieldset>
+        
+                <div class="campo">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Sobre o que você deseja reportar?</strong></label>
+                    <label>
+                        <input type="radio" name="devweb" value="tatuador">Tatuador
+                    </label>
+                    <label>
+                        <input type="radio" name="devweb" value="plataforma">Plataforma
+                    </label>
+                </div>
+        
+                <div class="campo"> 
+                    <label for="opcao"><strong>Opção</strong></label>
+                    <select id="opcao">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Crítica</option>
+                        <option>Elogio</option>
+                        <option>Feedback sobre o atendimento</option>
+                        <option>Problemas para se comunicar</option>
+                        <option>Erro na plataforma</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <br>
+                    <label><strong>Deixe sua mensagem:</strong></label>
+                    <textarea row="6" style="width: 26em;" id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button class="butao" type="submit"><strong>Enviado</strong></button>
+            </form>
+    </main>
+    
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Tatu</h1>
+                <p>Um ambiente para quem ama tatuagem.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhlJREFUSEvVlq9zE0Ecxd/7C4qMorJVIKNAtqrIigI2NZVUUdmqVlYVMHQwWBRIUDCDaGY6AxKHTBTydd7M95i9y15uL+lM2jOZ5Db72e/b9/1BrOjhiri422BJawAeFaozJjntWtsaccCOAOwAWO/aqPH+D4BPAI7bDpEFS3oK4CIBOoJxIdzKWCE/PsAuyZn/zoAj0u8B9akPSXqD4keS4WcAngR82Iw8Bz4FcGCpSO4W02KhpD0AJPlB0peAn5M8TPfKgX8DeAhgc4FIDX0XgFFE+9mfJDdbwSHzX98nyWEu2pDRhnsc769CnbGk5wDexu/7JN9L+hffB6nctYjDVD7hN5JbTbAku/x1i/x28Imkl5YawDXJn5LsF9/5Nsmv1X+LwQnUDj8HUG3iDLAn7OQTksfpwZJ77g8OeX1yQzeaDo0rsjcMr3ljWXAl8UxEVXSSqmyorVkW/DEqWE2uhqQ2nNfV0vDeglcmtdPB5pqEeWrdJ8z1C8CDWzWX7zJJJ8PTdHoG4EVAbzedEufOKyBZx5cWEOdhV8l0b3Z1qgYDt7zLtrpeVDJD0oWbRKbEuqq5BE9JDrq601JtsaVcFrVFy/0jWqPr8WiB9uhrcACOOFtm540+bwLuIOzkPqOP08qPoR59/nelbHdqyOTI7WIbqZqhSgcSAz02veo17GVMYieXTpqT3HDX3PNuD/Sl+vZZt7KIbwDaBlQuX9vf4QAAAABJRU5ErkJggg=="/>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANtJREFUSEvtljEOAiEQRf+/iJaeQkutbD2Cl9BSL2FrZ2ulpd7AznI9gTf4BrMmhEgAs0iMUC4DL/NmZgNRaLEQF78LltQH0LPM3Ug2IZMfZyxpBGADwIDtdSY5zgKWNAWw81yeFXx19ObPuFV8cPUCOLXfGpLbzlW/0WyaaRACufvJzSVpCWBhXRRV0wqOUi3pCGAYWcc9yVkoNgd4TXJVAjzvbJwSVU9Ivmbam3iUavt0HScA9QcSmqTnfm2uoKY6Tt8cJ/OqtF+Wd5KXYI2cgOSuTgX44v8P/ABGZHofeN3GkQAAAABJRU5ErkJggg=="/>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAo1JREFUSEvlVitwFUEQ7JaoIKOIJAocUSATBTIKZFBIokASBTKKyMSAJApkYgBHFMgXheQp5FBNzVzN3e3e3otJUWxV6r28/fRM90zvEtc0eE24+LeAzWwNwB1n65LkYlXmZmdsZg8APAbwEMDNAtApgA8kT+YE0QQ2M2X2GoCAY5yn75oXAzEuAOyR1Gd1TAJ7lu88w0sArzyrZT7RzDac+jcAbvncU5LHNeQqsIN+9I2HJPdbFLr2LwE8a4EXgT2Dz57pZOSlYMxMdfDe57ZKtNeAtUmbu0yjkklmfaskmJnqQpkvSG4OF46AvZi+AJCm90guHfT7Kgz4nq+u+Yi1EnBEuk/yUJGamSLX7xpnJHdaevu+oPyU5G7eUwL+4VFuhjGYmQrmRdpY1G0YjGf9U7+TvNEC/i2aSd6OhYOMR9FPZW9mkUgv2F7GKcJzktsJWAahA/TZSTCT7k8A7gPYIXkWe4bAMgIVUQ94oPMvP2TSmVLQ0SF1YAcQ1SNNfO7I/boH7n0r61T7DV0tMu5q5u/5hYIITdaHhwzA9a8sUZfDW281BXQQ3ZASWZJcbxVXtJMOkDePRjKH0nRXfMnBTkjutYBFmQxE0YueHnVJO91W6m/1agyt3Q6LTBW9S1LMdKNmmQJWAL2CqGSvSr/rc98i0NSCo0Itauy6qOl1YFHnVhuZ2RPXvcfAXKovSG55IGs1ygvFmV2uerOVqjp8WZroLSUtRbu+q4pLLSN2pLVA5QXKVK+Qnq6tjKPv8jodlJ83KrwwEL2/4uGnPbo2n6/89DEzGYiAZG/6U3ss/HEgNh6l500EpytUa4+zLU7VQsmrN1rRuu6iVNrPss5hEM1XZquCrzr//wH/AaYEOC6FHC3dAAAAAElFTkSuQmCC"/>
+                    </a>
+                </div>
+                <br>
+                
+                <div>
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Blog</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Destaques da semana</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Ideias de tatuagens</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Conheça as categorias</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Products</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">App</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Desktop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Cloud</a>
+                        </li>
+                    </ul>
+
+                    <div id="footer_subscribe">
+                        <h3>Se inscreva!</h3>
+                        <p>
+                            Coloque seu e-mail para receber novas informações sobre o mundo tatuação
+                        </p>
+
+                        <div id="input_group">
+                            <input type="text" id="email">
+                            <button>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAP1JREFUSEvtljEOwjAMRV9HJjgJK5eAlY2RIzDBCDdgghuwcgpWLsOKjGoUVWljJyqVULNUqhw//x83dcVAqxqIywj+mfNNq6/AEpj1UMEZ2GneELwCbj0Aw5Rr4C4vQvAB2PcMPgHHLvACENvnhYU8gS3wqPMkwZM6sMSFLwR4ecESL6o96lWlPHWZwbHNFvWhyljRSau1UmkECdbVpt5aqBkswFTSlMqwP13gLvVamMakjiML3Kbe04DZ4Jj6lMpiq5t3iX4unkumWHHuhTaCP855muQ/rN4Al1wpxn3RQUD2yl9IJpGpMZEnrHX08SQpjh3n6mILrQkGs/oNxVNKH9IISI4AAAAASUVORK5CYII="/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserver
+        </div>
+    </footer>
+    
+</body>
+</html>
