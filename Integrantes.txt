@@ -1,9 +1,0 @@
-Projeto 2
-DISCIPLINA: Desenvolvimento Front-end
-ALUNAS: 
-Ana Alice Alves Uc22032210
-Alice Cruz Uc22100128
-Beatriz Rocha  Uc22101556
-Greyciane de Jesus Uc22100858
-PROFESSOR: Diego Dias Rodrigues
-Link para o GitHub: https://github.com/rochabea/frontend.git
