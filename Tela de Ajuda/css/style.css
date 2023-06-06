@@ -182,7 +182,7 @@ div.barra .navigation i{
 /* footer */
 footer{
     width: 100%;
-    color: var(--dark);
+    color: var(--branco);
 }
 
 .footer-link {
@@ -253,7 +253,7 @@ footer{
 }
 
 .footer-list .footer-link {
-    color: var(--dark);
+    color: var(--branco);
     transition: all 0.4s;
 }
 

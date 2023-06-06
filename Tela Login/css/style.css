@@ -242,7 +242,7 @@ section.images {
 
 footer{
     width: 100%;
-    color: var(--dark);
+    color: var(--branco);
 }
 
 .footer-link {
@@ -298,6 +298,10 @@ footer{
     background-color: #25d366;
 }
 
+#facebook {
+    background-color: #4267b3;
+}
+
 #footer_subscribe {
     display: flex;
     flex-direction: column;
@@ -312,7 +316,7 @@ footer{
 }
 
 .footer-list .footer-link {
-    color: var(--dark);
+    color: var(--branco);
     transition: all 0.4s;
 }
 
