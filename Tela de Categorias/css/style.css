@@ -106,7 +106,6 @@ div.barra .navigation i{
 
 img{
 width: 380px!important;
-height: 200px!important;
 object-fit:cover;
 justify-content: space-between;
 display: flex;
@@ -122,8 +121,11 @@ border-radius: 50px;
     justify-content:center;
     position: relative;
     text-align: center;
-    
 }  
+
+.categorias-img1{
+    height: 200px;
+}
 
 .categorias-button {
     padding: 15px 120px;

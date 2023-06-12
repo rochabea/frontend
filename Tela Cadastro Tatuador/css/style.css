@@ -17,6 +17,7 @@
 body{
     color: var(--dark);
     background: var(--branco);
+   
 }
 
 
@@ -103,10 +104,11 @@ body{
 
 /* corpo */
 .container {
-    width: 80%;
-    height: 80vh;
+    width: 100%;
+    height: 120vh;
     display: flex;
-    
+    align-self: center;
+    margin-left: 20rem;
 }
 
 .form {
@@ -226,6 +228,7 @@ body{
 footer{
     width: 100%;
     color: var(--branco);
+
 }
 
 .footer-link {
@@ -235,7 +238,7 @@ footer{
 
 #footer_content {
     background-color: var(--fundo);
-    display: flex;
+    
     align-items: center;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);

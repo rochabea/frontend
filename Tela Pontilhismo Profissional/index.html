@@ -106,7 +106,9 @@
           </div>
         </div>
         </main>
-        </main>
+        <div class="voltar">
+            <a href="/Tela de Categorias/index.html" class="btn-voltar">Voltar para a tela de Categorias</a>
+          </div> <br><br>
 
 
 
@@ -186,14 +188,8 @@
         </div>
     </footer>
     
-      <style>
-        .btn.disabled, .btn:disabled, fieldset:disabled .btn {
-    color: var(--bs-btn-disabled-color);
-    pointer-events: none;
-    background-color: #404447;
-    border-color: #404447;
-    opacity: var(--bs-btn-disabled-opacity);
-}
+    <style>
+        
         :root{
         --primaria:#353434;
         --branco:#fff;
@@ -201,10 +197,35 @@
         --secundaria: #414040;
         --fundo: #5b5a5a;
     }
+
+    .btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: #404447;
+    border-color: #404447;
+    opacity: var(--fundo);
+    }
+
+    .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--fundo);
+    --bs-btn-border-color: var(--fundo);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--dark);
+    --bs-btn-hover-border-color: var(--dark);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--dark);
+    --bs-btn-active-border-color: var(--dark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--dark);
+    --bs-btn-disabled-border-color: var(--dark);
+}
     
-footer{
-width: 100%;
-color: var(--branco);
+    footer{
+    width: 100%;
+    color: var(--branco);
 }
 
 .footer-link {
@@ -371,10 +392,10 @@ a {
       .b-example-divider {
         width: 100%;
         height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
+        background-color: var(--primaria);
+        border: solid var(--dark);
         border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em var(--dark);
       }
 
       .b-example-vr {
@@ -407,20 +428,7 @@ a {
       }
 
       .btn-bd-primary {
-        --bd-violet-bg: #000000;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #000;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        background-color: var(--fundo);
       }
       .bd-mode-toggle {
         z-index: 1500;
@@ -440,7 +448,7 @@ a {
       border-radius: 3px;
     }
     #shimeji-contextMenu::-webkit-scrollbar-thumb:hover {
-      background: #555;
+      background: var(--fundo);
     }
         :root{
     --primaria:#353434;
@@ -522,6 +530,16 @@ div.barra .navigation i{
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
     background: var(--primaria);
+}
+
+.btn-voltar {
+  padding: 10px 40px;
+  background: var(--primaria);
+  color: var(--branco);
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5s;
+  margin: 5rem;
 }
     </style>
   </body>
