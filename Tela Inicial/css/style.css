@@ -15,6 +15,8 @@
     --secundaria: #414040;
     --fundo: #5b5a5a;
     --rodape: #747373;
+    --cinza: #f7f7f7;
+    --clarinho: #e9e8e8;
 }
 
 body{
@@ -146,6 +148,16 @@ div.barra .navigation i{
 .home-img img{
     width: 600px;;    
     height: 300px;
+}
+
+.adm-btn{
+    padding: 15px 45px;
+    background: var(--cinza);
+    color: var(--clarinho);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+    margin-left: 1309px;
 }
 
 /*footer*/
